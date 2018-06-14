@@ -11,7 +11,9 @@ $(function() {
 	case 'All Products':
 		$('#listProducts').addClass('active');
 		break;
-		
+	default:
+		$('#a_'+menu).addClass('active');
+		break;
 	}
 	
 	

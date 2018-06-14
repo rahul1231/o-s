@@ -9,6 +9,13 @@
 	<url>http://maven.apache.org</url>
 	<dependencies>
 
+		<!-- Linking backend project -->
+		<dependency>
+			<groupId>net.rah</groupId>
+			<artifactId>osbackend</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
 		<!-- JAVA EE API -->
 		<dependency>
 			<groupId>javax</groupId>
