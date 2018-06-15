@@ -70,7 +70,7 @@ public class ProductTestCase {
 	}
 	*/
 	
-	
+	/*
 	@Test
 	public void testGetLatestActiveProducts() {
 
@@ -78,5 +78,5 @@ public class ProductTestCase {
 		
 		
 	}
-	
+	*/
 }
