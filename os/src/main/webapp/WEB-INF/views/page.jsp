@@ -47,54 +47,55 @@
 
 	<div class="wrapper">
 
-	<!-- Navigation -->
-	<%@include file="./shared/navbar.jsp"%>
+		<!-- Navigation -->
+		<%@include file="./shared/navbar.jsp"%>
 
-	<!-- Page Content -->
-	<!-- Loading home content -->
-	<div class="content">
-	<c:if test="${userClickHome==true}">
-		<%@include file="home.jsp"%>
-	</c:if>
+		<!-- Page Content -->
+		<!-- Loading home content -->
+		<div class="content">
+			<c:if test="${userClickHome==true}">
+				<%@include file="home.jsp"%>
+			</c:if>
 
-	<c:if test="${userClickAbout==true}">
-		<%@include file="about.jsp"%>
-	</c:if>
+			<c:if test="${userClickAbout==true}">
+				<%@include file="about.jsp"%>
+			</c:if>
 
-	<c:if test="${userClickContact==true}">
-		<%@include file="contact.jsp"%>
-	</c:if>
+			<c:if test="${userClickContact==true}">
+				<%@include file="contact.jsp"%>
+			</c:if>
 
-	<c:if test="${userClickCategoryProducts==true or userClickAllProducts==true}">
-		<%@include file="listProducts.jsp"%>
-	</c:if>
+			<c:if
+				test="${userClickCategoryProducts==true or userClickAllProducts==true}">
+				<%@include file="listProducts.jsp"%>
+			</c:if>
 
-	<c:if test="${userClickShowProduct==true}">
-		<%@include file="singleProduct.jsp"%>
-	</c:if>
+			<c:if test="${userClickShowProduct==true}">
+				<%@include file="singleProduct.jsp"%>
+			</c:if>
+
+		</div>
+
+		<!-- Footer comes here -->
+		<%@include file="./shared/footer.jsp"%>
+
+		<!-- jQuery -->
+		<script src="${js}/jquery.js"></script>
+
+		<!-- Bootstrap Core JavaScript -->
+		<script src="${js}/bootstrap.min.js"></script>
+
+		<!-- Datatable plugin -->
+		<script src="${js}/jquery.dataTables.js"></script>
+
+		<!-- Datatable Bootstrap Script -->
+		<script src="${js}/dataTables.bootstrap.js"></script>
+
+		<!-- Self coded js -->
+		<script src="${js}/myapp.js"></script>
 
 	</div>
 
-	<!-- Footer comes here -->
-	<%@include file="./shared/footer.jsp"%>
-
-	<!-- jQuery -->
-	<script src="${js}/jquery.js"></script>
-
-	<!-- Bootstrap Core JavaScript -->
-	<script src="${js}/bootstrap.min.js"></script>
-
-	<!-- Datatable plugin -->
-	<script src="${js}/jquery.dataTables.js"></script>
-	
-	<!-- Datatable Bootstrap Script -->
-	<script src="${js}/dataTables.bootstrap.js"></script>
-
-	<!-- Self coded js -->
-	<script src="${js}/myapp.js"></script>
-	
-	</div>
-	
 </body>
 
 </html>
