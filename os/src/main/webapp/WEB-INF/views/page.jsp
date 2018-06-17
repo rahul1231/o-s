@@ -90,7 +90,7 @@
 		<script src="${js}/bootstrap.min.js"></script>
 
 		<!-- Datatable plugin -->
-		<script src="${js}/jquery.dataTables.js"></script>
+		<script src="${js}/jquery.dataTables.min.js"></script>
 
 		<!-- Datatable Bootstrap Script -->
 		<script src="${js}/dataTables.bootstrap.js"></script>

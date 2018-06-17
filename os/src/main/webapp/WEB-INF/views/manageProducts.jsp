@@ -89,7 +89,7 @@
 							<div class="col-md-8">
 
 								<sf:input type="number" path="unitPrice" id="unitPrice"
-									placeholder="Unit Price in &#8377;" class="form-control" />
+									placeholder="Unit Price" class="form-control" />
 								<sf:errors path="unitPrice" cssClass="help-block" element="em" />
 							</div>
 
@@ -192,6 +192,7 @@
 						<th>Id</th>
 						<th>&#160;</th>
 						<th>Name</th>
+						<th>Brand</th>
 						<th>Quantity</th>
 						<th>Unit Price</th>
 						<th>Active</th>
@@ -201,68 +202,7 @@
 
 				</thead>
 				
-				<tbody>
-				
-					<tr>
-					
-						<td>4</td>
-						<td>
-						
-							<img class="adminDataTableImg" src="${contextRoot}/resources/images//os/src/main/webapp/assets/images/PRDF59FA64BF5.png"
-							alt="Macbook Pro"/>
-						
-						</td>
-						<td>Macbook Pro</td>
-						<td>3</td>
-						<td>&#8377; 54000.00/-</td>
-						<td>
-							<!-- Toggle switch -->
-							<label class="switch">
-								<input type="checkbox" checked="checked" value="4"/>
-								<div class="slider round">
-									
-								</div>
-							</label>
-						</td>
-						<td>
-							<a href="${contextRoot}/manage/4/product" class="btn btn-warning">
-								<span class="glyphicon glyphicon-pencil"></span>
-							</a>
-						</td>
-					
-					</tr>
-				
-					<tr>
-					
-						<td>4</td>
-						<td>
-						
-							<img class="adminDataTableImg" src="${contextRoot}/resources/images//os/src/main/webapp/assets/images/PRDF59FA64BF5.png"
-							alt="Macbook Pro"/>
-						
-						</td>
-						<td>Macbook Pro</td>
-						<td>3</td>
-						<td>&#8377; 54000.00/-</td>
-						<td>
-							<!-- Toggle switch -->
-							<label class="switch round">
-								<input type="checkbox" value="4"/>
-								<div class="slider round">
-									
-								</div>
-							</label>
-						</td>
-						<td>
-							<a href="${contextRoot}/manage/4/product" class="btn btn-warning">
-								<span class="glyphicon glyphicon-pencil"></span>
-							</a>
-						</td>
-					
-					</tr>
-				
-				</tbody>
-				
+								
 				<tfoot>
 
 					<tr>
@@ -270,11 +210,12 @@
 						<th>Id</th>
 						<th>&#160;</th>
 						<th>Name</th>
+						<th>Brand</th>
 						<th>Quantity</th>
 						<th>Unit Price</th>
 						<th>Active</th>
 						<th>Edit</th>
-
+						
 					</tr>
 
 				</tfoot>
