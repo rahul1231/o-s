@@ -258,13 +258,22 @@ $(function() {
 							
 							if(confirmed){
 								console.log(value);
-								bootbox.alert({
+								
+								var activationUrl=window.contextRoot+'/manage/product/'+value+'/activation';
+								
+								$.post(activationUrl,function(data) {
 									
-									size:'medium',
-									title:'Information',
-									message:'You are going to perform operation on product '+value
+									bootbox.alert({
+										
+										size:'medium',
+										title:'Information',
+										message:data
+										
+									});
 									
 								});
+								
+								
 							}
 							else {
 								checkbox.prop('checked',!checked);

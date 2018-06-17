@@ -12,9 +12,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import net.rah.os.util.FileUploadUtility;
@@ -88,6 +90,21 @@ public class ManagementController {
 		}
 		
 		return "redirect:/manage/products?operation=product";
+	}
+	
+	@RequestMapping(value="/product/{id}/activation",method=RequestMethod.POST)
+	@ResponseBody
+	public String handleProductActivation(@PathVariable int id) {
+		//is going to fetch the product from the database
+		Product product=productDAO.get(id);
+		boolean isActive=product.isActive();
+		//activating and deactivating based on the active field
+		product.setActive(!product.isActive());
+		//updating the product
+		productDAO.update(product);
+		
+		return (isActive)? "You have successfully deactivated the product with id "+product.getId():
+							"You have successfully activated the product with id "+product.getId();
 	}
 	
 	//returning categories for all the request mapping
