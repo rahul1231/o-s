@@ -34,7 +34,7 @@ private static AnnotationConfigApplicationContext context;
 		
 	}
 	
-	
+	/*
 	@Test
 	public void testAdd() {
 		
@@ -46,23 +46,6 @@ private static AnnotationConfigApplicationContext context;
 		user.setRole("USER");
 		user.setPassword("123456");
 		
-		//add the user
-		assertEquals("Failure!",true,userDAO.addUser(user));
-		
-		address=new Address();
-		address.setAddressLineOne("101/B Jadoo Society, Krish Nagar");
-		address.setAddressLineTwo("Near Kaabil Store");
-		address.setCity("Mumbai");
-		address.setState("Maharashtra");
-		address.setCountry("India");
-		address.setPostalCode("400001");
-		address.setBilling(true);
-		
-		//link the user to the address using user id
-		address.setUserId(user.getId());
-		
-		//add the address
-		assertEquals("Failure!",true,userDAO.addAddress(address));
 		
 		if(user.getRole().equals("USER")){
 			
@@ -70,37 +53,34 @@ private static AnnotationConfigApplicationContext context;
 			cart=new Cart();
 			cart.setUser(user);
 			
-			//add the cart
-			assertEquals("Failure!",true,userDAO.addCart(cart));
-			
-			//add a shippig address foor this user
-			address=new Address();
-			address.setAddressLineOne("201/B Jadoo Society, Kishan Kanhaiya Nagar");
-			address.setAddressLineTwo("Near Kudrat Store");
-			address.setCity("Mumbai");
-			address.setState("Maharashtra");
-			address.setCountry("India");
-			address.setPostalCode("400001");
-			address.setShipping(true);
-			
-			//link it with the user
-			address.setUserId(user.getId());
-			
-			//add the shipping address
-			assertEquals("Failure!",true,userDAO.addAddress(address));
-			
-			
+			//attach cart with the user
+			user.setCart(cart);
 		}
 		
-		
+		//add the user
+		assertEquals("Failure!",true,userDAO.addUser(user));
 		
 		
 	}
+	*/
 	
 	
-	
-	
-	
+	@Test
+	public void testUpdateCart() {
+		
+		//fetch the user by its email
+		user=userDAO.getByEmail("hr@gmail.com");
+		
+		//get the cart of the user
+		cart=user.getCart();
+		
+		cart.setGrandTotal(5555);
+		
+		cart.setCartLines(2);
+		
+		assertEquals("Failure",true,userDAO.updateCart(cart));
+		
+	}
 	
 	
 }
