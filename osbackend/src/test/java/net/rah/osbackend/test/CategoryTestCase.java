@@ -1,4 +1,4 @@
-package net.rah.osbackend;
+package net.rah.osbackend.test;
 
 import static org.junit.Assert.assertEquals;
 
