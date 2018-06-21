@@ -18,7 +18,7 @@
 
 
 	<context:component-scan base-package="net.rah.os.*" />
-	<context:component-scan base-package="net.rah.osbackend.*" />
+	
 
 	<bean id="viewResolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
