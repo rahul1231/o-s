@@ -29,15 +29,15 @@ CREATE TABLE user_detail(
 
 INSERT INTO user_detail 
 (first_name,last_name,role,enabled,password,email,contact_number) 
-VALUES ('Virat','Kohli','ADMIN',true,'$2a$06$SYw18Cyh8O0lk9QTiIuLjuCFayDiHphZ2nYuTuXpBF8V7Cylk9sL.','vk@gmail.com','8888888888');
+VALUES ('Virat','Kohli','ADMIN',true,'$2y$12$N6HXWWj.YndNWaiiKkkCkOKmL4jsxQSSk/RW8THxE2IUcy/PG.zpm.','vk@gmail.com','8888888888');
 
 INSERT INTO user_detail 
 (first_name,last_name,role,enabled,password,email,contact_number) 
-VALUES ('Ravindra','Jadeja','SUPPLIER',true,'$2a$06$kIInC2dt4lPsDivKgbTdduGooL8snSH6UFRoURWM4vzDa1KcuqkqC','rj@gmail.com','9999999999');
+VALUES ('Ravindra','Jadeja','SUPPLIER',true,'$2y$12$XdQE3lTT6XMyG3pGL8dBTOZpqlBS7PFAatFRIuUSALwi/W7tWECIe','rj@gmail.com','9999999999');
 
 INSERT INTO user_detail 
 (first_name,last_name,role,enabled,password,email,contact_number) 
-VALUES ('Ravichandra','Ashwin','SUPPLIER',true,'$2a$06$tmme5iP4OJT8qCTDhk.jle4J/akpPkcz2nluqrxbFK19COIr2LJya','ra@gmail.com','7777777777');
+VALUES ('Ravichandra','Ashwin','SUPPLIER',true,'$2y$12$3C87Q5efBhTSBe.3l3ltfO5HxT6EjP4/untEcMpSeo.Ji3eShPQiW','ra@gmail.com','7777777777');
 
 
 CREATE TABLE product(
