@@ -186,8 +186,10 @@
 
 	<div class="col-xs-12">
 
-		<div style="overflow: auto"></div>
-
+		<div class="container-fluid">
+		
+			<div class="table-responsive">
+			
 		<!-- Products table for admin -->
 		<table id="adminProductsTable"
 			class="table table-striped table-bordered">
@@ -229,7 +231,13 @@
 
 
 		</table>
+				
+			
+			</div>
+		
+		</div>
 
+		
 
 	</div>
 
